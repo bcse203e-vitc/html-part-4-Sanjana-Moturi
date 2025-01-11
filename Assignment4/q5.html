@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Product Order</legend>
+        <form>
+            <label for="name">Full name</label><br>
+            <input id="name" name="name" type="text" placeholder="Enter your full name" required><br><br>
+            <label for="mail">E-mail</label><br>
+            <input id="mail" name="mail" type="email" placeholder="example@gmail.com" required><br><br>
+            <label for="Address">Address</label><br>
+            <input id="Address" name="Address" type="text" placeholder="Enter your address "><br><br>
+            <label>Product</label>
+            <select id="Product" name="Product">
+                <option value="---Select Product---">--Select Product--</option>
+                <option value="WHITE SHIRT">WHITE SHIRT - 1999</option>
+                <option value="HAND WASH - 200">HAND WASH - 200</option>
+                <option value="SHAMPOO - 10">SOAP - 10</option>
+            </select><br><br>
+            <label for="QUANTITY">Quantity</label>
+            <input type="number" id="QUANTITY" name="QUANTITY" min="1" placeholder="Enter the quantity of product"
+                required><br><br>
+            <label for="DELIVERY">Delivery</label>
+            <input type="radio" id="Standard" name="DELIVERY">
+            <label for="Standard">Standard</label>
+            <input type="radio" id="Express" name="DELIVERY">
+            <label for="Express">Express</label><br><br>
+
+            <label for="ApplyCoupon">Apply Coupon:</label>
+            <input type="text" id="ApplyCoupon" name="ApplyCoupon" placeholder="Enter the coupon code" required><br><br>
+
+            <label for="Total">Total Price</label>
+            <input type="text" id="Total" name="Total" placeholder="Total Price" readonly><br><br>
+
+            <button type="submit">SUBMIT</button>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>

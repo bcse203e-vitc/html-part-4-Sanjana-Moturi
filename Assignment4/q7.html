@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel booking</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Travel Booking</legend>
+        <label for="name">Name:</label><br>
+        <input id="name" name="name" type="text" placeholder="Enter your full name"><br><br>
+        <label for="cont">Contact info</label><br>
+        <input id="cont" name="cont" type="text" placeholder="Enter your mobile number" pattern="[0-9]{10}"><br><br>
+        <input id="cont" name="cont" type="email" placeholder="example@gmail.com"><br><br>
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination">
+            <option value="--Select Your Destination--">--Select Your Destination--</option>
+            <option value="1">Dubai</option>
+            <option value="2">Thailand</option>
+            <option value="3">Singapore</option>
+            <option value="4">Sydney</option>
+            <option value="5">Bali</option>
+            <option value="6">Maldives</option>
+        </select><br><br>
+        <label>Date:</label><br>
+        <label for="fdate">from date</label><br>
+        <input id="fdate" name="fdate" type="date"><br><br>
+        <label for="tdate">to date</label><br>
+        <input id="tdate" name="tdate" type="date"><br><br>
+        <label for="ntravel">Number of travelers:</label><br>
+        <input id="ntravel" name="ntravel" type="number" placeholder="Enter number of travelers"><br><br>
+        <label for="travelclass">Travel class</label><br>
+        <input type="radio" id="Economy" name="travelclass">
+        <label for="travelclass">Economy</label><br>
+        <input type="radio" id="Buisiness" name="travelclass">
+        <label for="Buisiness">Buisiness</label><br>
+        <input type="radio" id="Firstclass" name="travelclass">
+        <label for="Firstclass">First Class</label><br><br>
+        <input type="checkbox" id="traveli" name="traveli">
+        <label for="traveli">Travel Insurance</label><br><br>
+        <label for="Total">Total Cost  </label>
+        <input id="Total" name="Total" placeholder="Total cost will be calculated" readonly><br><br>
+        <button type="botton" onclick="Submitted">SUBMIT</button>
+    </fieldset>
+</body>
+
+</html>
